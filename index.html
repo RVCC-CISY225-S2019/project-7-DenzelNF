@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About Me</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/nav-style.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- skip link -->
+	<a href="#main" class="skip">Skip to main</a>
+	<!-- start of header -->
+	<header id="header" class="header">
+		<nav class="navbar">
+			<span class="navbar-toggle" id="js-navbar-toggle">
+				<i id="symbol-toggle" class="fas fa-bars"></i>
+			</span>
+			<a href="#header" class="logo">
+				<div class="logo-container">
+					<img class="logo" src="images/logo-1913689.svg" alt="Company Logo">
+					<h1 class="page-title">Web Dev I</h1>
+				</div>
+			</a>
+			<ul class="main-nav" id="js-menu">
+				<li>
+					<a href="#main" class="nav-links">Main</a>
+				</li>
+				<li>
+					<a href="#about-me" class="nav-links">About Me</a>
+				</li>
+				<li>
+					<a href="#pictures" class="nav-links">My Photos</a>
+				</li>
+				<li>
+					<a href="#story" class="nav-links">A Story</a>
+				</li>
+				<li>
+					<a href="#contact" class="nav-links">Contact Me</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- end of header -->
+	<!-- start of main content -->
+	<!--    why put tabindex of -1 on skiplink target -  https://axesslab.com/skip-links/ -->
+	<main id="main" tabindex="-1" class="main">
+		<!-- start of bio section -->
+		<section class="hero">
+			<div class="content">
+				<picture>
+					<source media="(min-width: 1024px)" srcset="images/Denzelpic-lrg.png">
+					<source media="(min-width: 960px)" srcset="images/Denzelpic-med.png">
+					<source media="(min-width: 640px)" srcset="images/Denzelpic-small.png"> <img class="my-picture" src="images/Denzelpic-xsmall.png" alt="This is a picture of me"> </picture>
+				<p class="my-name">Denzel Forster</p>
+				<p class="my-location">Middlesex, NJ</p>
+			</div>
+		</section>
+		<section id="about-me" class="about-me">
+			<div class="content">
+				<div class="about-content">
+					<p class="iama">I want to be...</p>
+					<p class="my-info">a computer wizard</p>
+					<p class="iama">My favorite way to work is...</p>
+					<p class="my-info">late at night with no distractions, with the light glow from the computer screen.</p>
+					<p class="iama">In my free time, I like to...</p>
+					<p class="my-info">sleep, hangout with friends, and play video-games.</p>
+				</div>
+			</div>
+		</section>
+		<!-- end of bio section -->
+		<div class="back-to-top">
+			<a href="#">Back to Top</a>
+		</div>
+		<!-- start of photo gallery -->
+		<h3> Gallery </h3>
+		<section id="pictures" class="gallery">
+			<figure>
+				<picture>
+					<source media="(min-width: 1024px)" srcset="images/VBeach-lrg.PNG">
+					<source media="(min-width: 960px)" srcset="images/VBeach-med.PNG">
+					<source media="(min-width: 640px)" srcset="images/VBeach-small.jpg"> <img class="Cali" src="images/VBeach-xsmall.PNG" alt="Venice Beach"> </picture>
+				<figcaption> Venice Beach at Sunset, &copy; Denzel Forster, All Rights Reserved </figcaption>
+			</figure>
+			<hr class="mobile-first">
+			<figure>
+				<picture>
+					<source media="(min-width: 1024px)" srcset="images/Vwalk-lrg.JPG">
+					<source media="(min-width: 960px)" srcset="images/Vwalk-med.JPG">
+					<source media="(min-width: 640px)" srcset="images/Vwalk-small.jpg"> <img class="Cali" src="images/Vwalk-xsmall.JPG" alt="Venice Beach"> </picture>
+				<figcaption> Venice Beach Walkway, &copy; Denzel Forster, All Rights Reserved </figcaption>
+			</figure>
+			<hr class="mobile-first">
+			<figure>
+				<picture>
+					<source media="(min-width: 1024px)" srcset="images/SantaGate-lrg.JPG">
+					<source media="(min-width: 960px)" srcset="images/SantaGate-med.JPG">
+					<source media="(min-width: 640px)" srcset="images/SantaGate-small.jpg"> <img class="Cali" src="images/SantaGate-xsmall.JPG" alt="Venice Beach"> </picture>
+				<figcaption> Santa Monica Pier Enterance, &copy; Denzel Forster, All Rights Reserved </figcaption>
+			</figure>
+			<hr class="mobile-first">
+			<figure>
+				<picture>
+					<source media="(min-width: 1024px)" srcset="images/SantaWheel-lrg.JPG">
+					<source media="(min-width: 960px)" srcset="images/SantaWheel-med.JPG">
+					<source media="(min-width: 640px)" srcset="images/SantaWheel-small.jpg"> <img class="Cali" src="images/SantaWheel-xsmall.JPG" alt="Venice Beach"> </picture>
+				<figcaption> Santa Monica Ferris Wheel, &copy; Denzel Forster, All Rights Reserved </figcaption>
+			</figure>
+		</section>
+		<!-- end of photo gallery -->
+		<div class="back-to-top">
+			<a href="#">Back to Top</a>
+		</div>
+		<hr class="mobile-first">
+		<!-- start of Sherlock Holmes story -->
+		<article id="story" class="story">
+			<h1> Dr Jekyll and Mr Hyde</h1>
+			<div class="story-body">
+				<p>As Bradshaw left, the lawyer looked at his watch. “And now, Poole, let us get to ours,” he said; and taking the poker under his arm, led the way into the yard. The scud had banked over the moon, and it was now quite dark. The wind, which only broke in puffs and draughts into that deep well of building, tossed the light of the candle to and fro about their steps, until they came into the shelter of the theatre, where they sat down silently to wait. London hummed solemnly all around; but nearer at hand, the stillness was only broken by the sounds of a footfall moving to and fro along the cabinet floor.</p>
+				<p>“So it will walk all day, sir,” whispered Poole; “ay, and the better part of the night. Only when a new sample comes from the chemist, there’s a bit of a break. Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it! But hark again, a little closer--put your heart in your ears, Mr. Utterson, and tell me, is that the doctor’s foot?”</p>
+				<p>The steps fell lightly and oddly, with a certain swing, for all they went so slowly; it was different indeed from the heavy creaking tread of Henry Jekyll. Utterson sighed. “Is there never anything else?” he asked.</p>
+				<p>Poole nodded. “Once,” he said. “Once I heard it weeping!”</p>
+				<p>“Weeping? how that?” said the lawyer, conscious of a sudden chill of horror.</p>
+				<p>“Weeping like a woman or a lost soul,” said the butler. “I came away with that upon my heart, that I could have wept too.”</p>
+				<p>But now the ten minutes drew to an end. Poole disinterred the axe from under a stack of packing straw; the candle was set upon the nearest table to light them to the attack; and they drew near with bated breath to where that patient foot was still going up and down, up and down, in the quiet of the night. “Jekyll,” cried Utterson, with a loud voice, “I demand to see you.” He paused a moment, but there came no reply. “I give you fair warning, our suspicions are aroused, and I must and shall see you,” he resumed; “if not by fair means, then by foul--if not of your consent, then by brute force!”</p>
+				<p>“Utterson,” said the voice, “for God’s sake, have mercy!”</p>
+				<p>“Ah, that’s not Jekyll’s voice--it’s Hyde’s!” cried Utterson. “Down with the door, Poole!”</p>
+				<p>Poole swung the axe over his shoulder; the blow shook the building, and the red baize door leaped against the lock and hinges. A dismal screech, as of mere animal terror, rang from the cabinet. Up went the axe again, and again the panels crashed and the frame bounded; four times the blow fell; but the wood was tough and the fittings were of excellent workmanship; and it was not until the fifth, that the lock burst and the wreck of the door fell inwards on the carpet.</p>
+				<p>The besiegers, appalled by their own riot and the stillness that had succeeded, stood back a little and peered in. There lay the cabinet before their eyes in the quiet lamplight, a good fire glowing and chattering on the hearth, the kettle singing its thin strain, a drawer or two open, papers neatly set forth on the business table, and nearer the fire, the things laid out for tea; the quietest room, you would have said, and, but for the glazed presses full of chemicals, the most commonplace that night in London.</p>
+				<p>Right in the middle there lay the body of a man sorely contorted and still twitching. They drew near on tiptoe, turned it on its back and beheld the face of Edward Hyde. He was dressed in clothes far too large for him, clothes of the doctor’s bigness; the cords of his face still moved with a semblance of life, but life was quite gone: and by the crushed phial in the hand and the strong smell of kernels that hung upon the air, Utterson knew that he was looking on the body of a self-destroyer.</p>
+				<p>“We have come too late,” he said sternly, “whether to save or punish. Hyde is gone to his account; and it only remains for us to find the body of your master.”</p>
+				<p>The far greater proportion of the building was occupied by the theatre, which filled almost the whole ground storey and was lighted from above, and by the cabinet, which formed an upper story at one end and looked upon the court. A corridor joined the theatre to the door on the by-street; and with this the cabinet communicated separately by a second flight of stairs. There were besides a few dark closets and a spacious cellar. All these they now thoroughly examined. Each closet needed but a glance, for all were empty, and all, by the dust that fell from their doors, had stood long unopened. The cellar, indeed, was filled with crazy lumber, mostly dating from the times of the surgeon who was Jekyll’s predecessor; but even as they opened the door they were advertised of the uselessness of further search, by the fall of a perfect mat of cobweb which had for years sealed up the entrance. No where was there any trace of Henry Jekyll dead or alive.</p>
+				<p>Poole stamped on the flags of the corridor. “He must be buried here,” he said, hearkening to the sound.</p>
+				<p>“Or he may have fled,” said Utterson, and he turned to examine the door in the by-street. It was locked; and lying near by on the flags, they found the key, already stained with rust.</p>
+				<p>“This does not look like use,” observed the lawyer.</p>
+				<p>“Use!” echoed Poole. “Do you not see, sir, it is broken? much as if a man had stamped on it.”</p>
+				<p>“Ay,” continued Utterson, “and the fractures, too, are rusty.” The two men looked at each other with a scare. “This is beyond me, Poole,” said the lawyer. “Let us go back to the cabinet.”</p>
+			</div>
+		</article>
+		<!-- end of Sherlock Holmes story -->
+	</main>
+	<!-- end of main content -->
+	<div class="back-to-top">
+		<a href="#">Back to Top</a>
+	</div>
+	<hr class="mobile-first">
+	<!-- start of contact form -->
+	<section id="contact" class="form-container">
+		<h1>Get in Touch</h1>
+		<br class="mobile-first"><br class="mobile-first">
+		<form method="POST" action="https://formspree.io/forsterdenzel@yahoo.com">
+			<fieldset>
+				<legend>Please Feel Free to Contact Me</legend>
+				<label for="mail">Email</label>
+				<br>
+				<input type="email" id="mail" name="user_email">
+				<br>
+				<br>
+				<form class="contact">
+					<fieldset>
+						<legend>I would like a reply</legend>
+						<label for="reply-yes">Yes</label>
+						<input type="radio" id="reply-yes" name="reply" value="yes" checked>
+						<br>
+						<br>
+						<label for="reply-no">No</label>
+						<input type="radio" id="reply-no" name="reply" value="no" checked>
+						<br>
+						<br>
+					</fieldset>
+					<br class="mobile-first"><br class="mobile-first">
+					<br>
+					<label for="msg">Message</label>
+					<input type="textarea" id="message" name="message">
+					<br>
+					<br>
+					<br>
+					<br>
+					<button type="submit">Send Message</button>
+				</form>
+			</fieldset>
+		</form>
+	</section>
+	<!-- end of contact form -->
+	<!-- start of footer -->
+	<footer>
+		<br class="mobile-first"><br class="mobile-first">
+		&copy; Denzel Forster, All Rights Reserved
+	</footer>
+	<div class="back-to-top">
+		<a href="#">Back to Top</a>
+	</div>
+	<!-- end of footer -->
+	<br class="mobile-first"><br class="mobile-first">
+	<!-- start of javascript for nav toggle -->
+	<script>
+		let mainNav = document.getElementById('js-menu');
+		let navBarToggle = document.getElementById('js-navbar-toggle');
+		let symbolToggle = document.getElementById('symbol-toggle');
+
+
+		navBarToggle.addEventListener('click', function() {
+			mainNav.classList.toggle('active');
+			if (symbolToggle.classList.contains('fa-bars')) {
+				symbolToggle.classList.remove('fa-bars');
+				symbolToggle.classList.add('fa-times');
+			} else {
+				symbolToggle.classList.remove('fa-times');
+				symbolToggle.classList.add('fa-bars');
+			}
+		});
+
+	</script>
+	<!-- end of javascript for nav toggle -->
+</body>
+
+</html>

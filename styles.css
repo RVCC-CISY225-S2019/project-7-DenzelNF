@@ -1,33 +1,190 @@
 body {
-    font-family: 'PT Serif', serif;
+	font-family: 'PT Serif', serif;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    font-weight: 300;
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: 300;
 }
 
-width: 10em;
-margin: 0;
--webkit-box-sizing: border-box;
-/* For legacy WebKit based browsers */
--moz-box-sizing: border-box;
-/* For legacy (Firefox <29) Gecko based browsers */
 
-box-sizing: border-box;
-
-input:focus, textarea:focus {
-    background: rgba(0, 0, 0, .1);
-    border-radius: 4%;
-    outline: none;
+input:focus,
+textarea:focus {
+	background: rgba(0, 0, 0, .1);
+	border-radius: 4%;
+	outline: none;
 }
 
 legend {
-    width: auto;
-    height: 1.5em;
+	width: auto;
+	height: 1.5em;
+}
+
+/*  grids */
+
+main {
+	display: grid;
+}
+
+/* hero content */
+
+.content {
+	display: grid;
+}
+
+/* about content */
+
+.about-content {
+	display: grid;
+}
+
+/*  gallery */
+
+.gallery {
+	display: grid;
+}
+
+figure {
+	display: grid;
+}
+
+/*  article */
+
+article {
+	display: grid;
+}
+
+/* form container */
+.form-container {
+	display: grid;
+}
+
+/* footer */
+
+footer {
+	display: grid;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+	.mobile-first {
+		display: none;
+	}
+
+	/*      hero content */
+
+	.content {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.content picture,
+	.content p,
+	.about-content {
+		grid-column: 2/3;
+	}
+
+	/*	about content */
+
+	/*	gallery */
+
+	figure {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+	}
+
+	figcaption {
+		margin-left: 1rem;
+	}
+
+	/*	article */
+	article,
+	.form-container {
+		grid-template-columns: 1fr 48ch 1fr;
+	}
+
+
+	article h1 {
+		margin-left: 10rem;
+	}
+
+	article h1,
+	.story-body {
+		grid-column: 2/3;
+	}
+
+	/*	form */
+	.form-container h1,
+	form {
+		grid-column: 2/3;
+	}
+
+}
+
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+
+
+	/*      hero content */
+
+	/*	about content */
+
+	/*	gallery */
+
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.gallery h1 {
+		grid-column: 1/4;
+	}
+
+
+
+	/*	article */
+
+	/*	form */
+
+}
+
+
+@media print {
+	body {
+		font-size: 15pt;
+		margin: 0;
+		color: #000;
+		background-color: #fff
+	}
+
+	nav,
+	form,
+	.form-container h1,
+	a {
+		display: none;
+	}
+
+	.content {
+		display: block;
+	}
+
+	article {
+		font-size: 15pt;
+	}
 }
